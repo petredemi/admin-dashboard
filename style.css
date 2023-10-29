@@ -64,6 +64,12 @@ input{
     margin-right: 200px;
     height: 1.2rem;
 }
+input:focus{
+        background-color: rgb(247, 247, 78);
+    }
+input:hover{
+    border: 2px solid red;
+}
 .first_line > p {
     width: fit-content;
 }
@@ -97,16 +103,17 @@ input{
 #btn{
     display: flex;
     margin-right: 50px;
-    margin-left: 200px;
-    width: 260px;
+    margin-left: 150px;
+    width: 320px;
     justify-content: space-between;
 }
 button{
-    height: 1.8rem;
+    height: 2rem;
+    font-size: 1.1rem;
     color: white;
     font-weight: bold;
-    width: 70px;
-    margin-left: 20px;
+    width: 80px;
+    margin-left: 10px;
     border-radius: 20px;
     background: rgb(19, 120, 242);
 }
