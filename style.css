@@ -6,6 +6,7 @@ body{
 }
 h2{
     display: inline;
+    text-shadow: 1px 1px 1px black;
 }
 .main_grid{
     display: grid;
@@ -111,6 +112,8 @@ button{
     height: 2rem;
     font-size: 1.1rem;
     color: white;
+    text-shadow: 1px 1px 1px black;
+
     font-weight: bold;
     width: 80px;
     margin-left: 10px;
