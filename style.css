@@ -1,0 +1,222 @@
+body{
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    display: inline;
+}
+.main_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25vh 75vh;
+    height: auto;
+    width: 80%;
+}
+.item1{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: rgb(42, 161, 251);
+    color: white;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.grid_item1 > p:hover{
+    color: red;
+    font-weight: bold;
+}
+.grid_item1{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 80px 30px;
+    grid-auto-rows: 30px;
+    gap: 5px;
+    align-items: center;
+}
+.item2{
+    
+    background: linear-gradient(to right, rgb(175, 245, 222), rgb(79, 192, 79));
+}
+.first_line{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.first_line > img{
+    margin-right: 20px;
+    height: 1.5rem;
+}
+#icon{
+    border-radius: 50%;
+    background-color: rgb(241, 228, 212);
+    height: 2.5rem;
+    border: 1px solid black;
+}
+input{
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 200px;
+    height: 1.2rem;
+}
+.first_line > p {
+    width: fit-content;
+}
+.second_line{
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    margin-left: 20px;
+}
+.second_line > img{
+    width: auto;
+    height: 5rem;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(241, 233, 223);
+    border:1px solid black;
+}
+.second_line > div{
+    width: fit-content;
+    margin-left: 3px;
+}
+#morgan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+#morgan > h3, p{
+    margin:2px;
+}
+#btn{
+    display: flex;
+    margin-right: 50px;
+    margin-left: 200px;
+    width: 260px;
+    justify-content: space-between;
+}
+button{
+    height: 1.8rem;
+    font-weight: bold;
+    width: 70px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: red;
+}
+.item3{
+    background: linear-gradient(to right, rgb(207, 202, 202), rgb(236, 231, 231), rgb(177, 175, 175), white,rgb(184, 182, 182));
+    display: block;
+    overflow: hidden;
+    
+}
+.project{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 1px;
+}
+.grid_content{
+    display: grid;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 1px;
+    padding: 5px;
+    resize: both;
+    height: 80vh;
+    overflow: auto;
+    grid-template-columns: 300px 300px 250px;
+    grid-template-rows: 158px 158px 158px;
+    gap:1.3rem;
+}
+
+.grid_content > .content7{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 1px;
+    background: none;
+    
+}
+.grid_content > div{
+    text-align: justify;
+    justify-content: space-between;
+    box-sizing: content-box;
+    background: linear-gradient(20deg, grey, white,grey);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-right: 15px;
+    font-size: 0.8rem;
+}
+.grid_content p{
+    margin-top: 0px;
+}
+.grid_content > div > div{
+    text-align: end;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+.grid_content > div > p{
+    height: 80px;
+}
+.grid_content > div > div > img{
+    height: 1.2rem;
+    margin-left: 10px;
+}
+.content7 >.maintenance{
+    box-sizing:content-box;
+    background: linear-gradient(20deg, grey, white,grey);
+    font-size: 0.7rem;
+    padding-left: 20px;
+    padding-top: 8px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+.trending_grid{
+    display: grid;
+    resize: both;
+    padding: 20px;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    align-items: center;
+    gap: 1px;
+    background: linear-gradient(20deg, grey, white,rgb(169, 166, 166));
+    margin-top: 2px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    text-align: left;
+
+}
+.trending img {
+    height: 40px;
+    border-radius: 90%;
+    background-color: bisque;
+    border: 1px solid black;
+}
+h3{
+    margin-bottom: 0px;
+    width: fit-content;
+    margin-right: 125px;
+}
+h4{
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+.maintenance > p{
+    margin:2px
+}
+.grid_content > div > p{
+    margin-top: 3px;
+}
