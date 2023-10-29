@@ -147,6 +147,7 @@ button:hover{
     grid-column-end: 4;
     padding: 1px;
     background: none;
+    border-style: none;
     
 }
 .grid_content > div{
@@ -159,6 +160,7 @@ button:hover{
     padding-top: 8px;
     padding-right: 15px;
     font-size: 0.8rem;
+    border-left: 7px solid orange;
 }
 .grid_content p{
     margin-top: 0px;
