@@ -14,6 +14,7 @@ h2{
     grid-template-rows: minmax(1fr, 300px ), 3fr;
     overflow: scroll;
     width: 80%;
+    height: 100%;
 }
 .item1{
     display: grid;
@@ -59,6 +60,9 @@ h2{
     width: 95%;
     height: fit-content;
     align-items: center;
+    color:rgb(245, 219, 71);
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.2rem;
 }
 .first_line > div{
     display: flex;
