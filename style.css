@@ -11,8 +11,7 @@ h2{
 .main_grid{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: minmax(1fr, 300px ), 3fr;
-    overflow: scroll;
+    grid-template-rows: minmax(1fr, 300px ) 3fr;
     width: 80%;
     height: 100%;
 }
@@ -168,9 +167,11 @@ button:hover{
 }
 .item3{
     background: linear-gradient(to right, rgb(207, 202, 202), rgb(236, 231, 231), rgb(177, 175, 175), white,rgb(184, 182, 182));
-    display: block;
-    overflow: hidden;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
     width: auto;
+    height: 80vh;
 }
 .project{
     display: flex;
@@ -178,6 +179,7 @@ button:hover{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 1px;
+    margin-top: 0px;
     width: 90%;
 }
 .grid_content{
@@ -185,11 +187,11 @@ button:hover{
     margin-left: 15px;
     margin-right: 80px;
     margin-top: 1px;
+    margin-bottom: 10px;
     padding: 5px;
-    overflow:scroll;
     grid-template-columns: 3fr 3fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap:1.3rem;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap:1.2rem;
     width: 95%;
     max-width: 95%;
     min-width: 400px;
@@ -273,6 +275,7 @@ h3{
     margin-bottom: 0px;
     width: fit-content;
     margin-right: 20px;
+    font-size: 1rem;
 }
 h4{
     margin-bottom: 1px;
