@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 h2{
     display: inline;
@@ -10,10 +11,11 @@ h2{
 }
 .main_grid{
     display: grid;
-    grid-template-columns: 1fr minmax(350px, 4fr);
+    grid-template-columns: minmax(170px, 1fr) minmax(350px, 4fr);
     grid-template-rows: minmax(1fr, 250px ) 3fr;
-    width: 80%;
     height: auto;
+    margin-left:150px;
+    margin-right:150px;
 }
 .item1{
     display: grid;
@@ -21,8 +23,8 @@ h2{
     grid-row-end: 3;
     background: linear-gradient(to right, rgb(81, 81, 254), rgb(194, 194, 255));
     color: white;
-    padding-left: 20px;
-    padding-top: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .grid_item1 > p:hover{
     color: red;
@@ -35,7 +37,7 @@ h2{
     grid-auto-rows: 30px;
     gap: 5px;
     align-items: center;
-    overflow: hidden;
+    position: fixed;
 }
 .item2{
     display: flex;
@@ -47,6 +49,8 @@ h2{
     justify-content: start;
     width: 100%;
     height: auto;
+    position: sticky;
+    top: 0px; 
 }
 
 .first_line{
@@ -180,6 +184,7 @@ button:hover{
     margin-bottom: 1px;
     margin-top: 0px;
     width: 90%;
+
 }
 .grid_content{
     display: grid;
