@@ -11,7 +11,7 @@ h2{
 }
 .main_grid{
     display: grid;
-    grid-template-columns: minmax(170px, 1fr) minmax(350px, 4fr);
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 4fr);
     grid-template-rows: minmax(1fr, 250px ) 3fr;
     height: auto;
     margin-left:150px;
@@ -22,9 +22,10 @@ h2{
     grid-row-start: 1;
     grid-row-end: 3;
     background: linear-gradient(to right, rgb(81, 81, 254), rgb(194, 194, 255));
-    color: white;
+    color: rgb(245, 237, 96);
     padding-left: 10px;
     padding-top: 10px;
+    overflow-y: hidden;
 }
 .grid_item1 > p:hover{
     color: red;
@@ -37,7 +38,7 @@ h2{
     grid-auto-rows: 30px;
     gap: 5px;
     align-items: center;
-    position: fixed;
+    overflow-x: hidden;
 }
 .item2{
     display: flex;
